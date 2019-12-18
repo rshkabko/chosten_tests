@@ -26,12 +26,16 @@ Must be NN
 
 Next. Go to /bitrix/php_interface/dbconn.php and replace
 From
+```php
 define("BX_CRONTAB_SUPPORT", true);
 define("BX_CRONTAB", true);
+```
 
 TO
 
+```php
 if(!(defined("CHK_EVENT") && CHK_EVENT===true))
    define("BX_CRONTAB_SUPPORT", true);
+```
 
 Next. Add to cron php -f www/YOUR_DOMAIN/local/php_interface/cron_events.php
