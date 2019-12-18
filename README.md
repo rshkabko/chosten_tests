@@ -38,4 +38,5 @@ if(!(defined("CHK_EVENT") && CHK_EVENT===true))
    define("BX_CRONTAB_SUPPORT", true);
 ```
 
-Next. Add to cron php -f www/YOUR_DOMAIN/local/php_interface/cron_events.php
+Next. Add to cron */5 * * * * php -f www/YOUR_DOMAIN/local/php_interface/cron_events.php
+
