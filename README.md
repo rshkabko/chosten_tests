@@ -14,11 +14,13 @@ Add file cron_events.php to /local/php_interface/cron_events.php
 
 Next. Start this code in console ( /bitrix/admin/php_command_line.php?lang=ru )
 
+```php
 COption::SetOptionString("main", "agents_use_crontab", "N"); 
 echo COption::GetOptionString("main", "agents_use_crontab", "N"); 
 
 COption::SetOptionString("main", "check_agents", "N"); 
 echo COption::GetOptionString("main", "check_agents", "Y");
+```
 
 Must be NN
 
