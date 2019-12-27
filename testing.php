@@ -177,7 +177,7 @@
 </html><?php
 
 class Chosten{
-    public static $lib  = array( 'gd', 'mbstring', 'libxml', 'xml', 'zip' );
+    public static $lib  = array( 'gd', 'mbstring', 'libxml', 'xml', 'zip', 'intl' );
     public static $Core = array( 'PHP Version', 'max_execution_time', 'post_max_size', 'upload_max_filesize', 'memory_limit', 'display_errors', 'log_errors' );
     
     public static function check_installing( $cmd, $short_return = false,$debug = false ){
