@@ -159,7 +159,7 @@
 				<tr>
 					<td>Версия Битрикс Окружения</td>
 					<td><?=getenv('BITRIX_VA_VER'); ?></td>
-					<td>Сделать <a href="https://clite.ru/articles/bitrix/bitrixenv-linux/1s-bitriks24-neobkhodimo-ego-ustanavlivat-na-veb-okruzhenii-bitriks/" target="_blank">putenv("BITRIX_VA_VER=7.3-3");</a></td>
+					<td>Сделать <a href="https://clite.ru/articles/bitrix/bitrixenv-linux/1s-bitriks24-neobkhodimo-ego-ustanavlivat-na-veb-okruzhenii-bitriks/" target="_blank">putenv("BITRIX_VA_VER=7.3-3");</a> lsapi_set_env BITRIX_VA_VER "7.4.3" в /etc/httpd/conf.d/lsapi.conf</td>
 				</tr>
 				<tr>
 					<td>Catdoc</td>
