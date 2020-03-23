@@ -173,6 +173,7 @@
 				</tr>
 			</tbody>
 		</table>
+		<p>Если не работаеют открытые линии в чатах Б24, нужно добавить <a href="https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=9357">proxy_ignore_client_abort on;</a></p>
 	</body>
 </html><?php
 
