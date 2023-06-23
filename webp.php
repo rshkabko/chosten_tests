@@ -70,20 +70,6 @@ class WEBP {
     
     public static function getWebPPath()
     {
-        if(isset($_SERVER['LOGNAME']))
-            $login = $_SERVER['LOGNAME'];
-        else {
-            preg_match('|\/var\/www\/(.*?)\/|sei', $_SERVER['DOCUMENT_ROOT'], $arr);
-            if(empty($arr['1']))
-                exit('Buy WebP');
-            $login = $arr['1'];
-        }
-            
-        $str = "/var/www/{$login}/data/cwebp";
-        
-        if(!file_exists($str))
-            exit('Buy WebP');
-            
-        return $str;
+        return 'cwebp';
     }
 }
